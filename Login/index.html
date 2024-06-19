@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log-In Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+    <div class="club-membership-form">
+        <a href="https://github.com/AntonioRu92" target="_blank">
+            <img class="" src="images/OIG2-removebg-preview.png" alt="A" width="180" />
+        </a>
+        <p class="club-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor. <br /><br />
+            Fusce imperdiet libero ac odio sagittis condimentum nam vel turpis massa duis!
+
+        </p>
+
+        <form class="sign-up-form" action="#" method="get">
+            <fieldset class="form-input">
+                <span class="required-info">Fields marked with <span class="required">*</span> are
+                    required.</span>
+
+                <div class="input-container">
+                    <input type="text" id="full_name" name="full_name" aria-label="Full Name" placeholder=" "
+                        minlength="3" required onfocus="toggleVisibility(0)" />
+                    <label for="full_name">Full Name: <span class="required">*</span></label>
+                </div>
+
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder=" " aria-label="Email"
+                        onblur="inputValidation('email')" onfocus="inputDefaultState('email'); toggleVisibility(0)"
+                        required />
+                    <label for="email">Email: <span class="required">*</span></label>
+                    <span class="invalid-message">Enter a valid email!</span>
+                </div>
+
+                <div class="input-container">
+                    <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{9}" placeholder=" "
+                        title="Enter a 9 digit phone number" aria-label="Phone Number"
+                        onfocus="inputDefaultState('phoneNumber') ;toggleVisibility(0)"
+                        onblur="inputValidation('phoneNumber')" required />
+                    <label for="phone_number">Phone Number: <span class="required">*</span>
+                    </label>
+                    <span class="invalid-message">Enter a 9 digit phone number!</span>
+                </div>
+
+                <div class="input-container password-container">
+                    <input type="password" id="password" name="password" placeholder=" " aria-label="Password"
+                        oninput="passwordCheck()" onblur="toggleVisibility(0); inputValidation('password1')"
+                        onfocus="inputDefaultState('password1')" pattern="^(?=.*[A-Z])(?=.*\d).{8,20}$" required />
+
+                    <div class="visibility-button" onclick="toggleVisibility(1)">
+                    </div>
+
+                    <label for="password">Password: <span class="required">*</span></label>
+
+                    <div class="password-message">
+                        <span class="length-validation">Length must be 8 to 20 characters. <br /></span>
+                        <span class="number-validation">Must contain at least 1 number. <br /></span>
+                        <span class="uppercase-validation">Must have at least 1 uppercase letter.</span>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" "
+                        aria-label="Confirm Password" oninput="passwordCheck()" onfocus="toggleVisibility(0)"
+                        required />
+                    <label for="confirmPassword">Confirm Password: <span class="required">*</span>
+                    </label>
+                    <span id="password-error"></span>
+                </div>
+            </fieldset>
+            <button class="submit-button" type="submit">Create Account</button>
+        </form>
+        <div class="existing-member">
+            Already an existing member? Login
+            <a href="https://github.com/AntonioRu92" onclick="reloadWebsite()">here</a>.
+        </div>
+    </div>
+    <div class="form-image">
+        <img class="img0" src="images/Ardev.jpeg" alt="" />
+
+        <div class="drop-shadow"></div>
+        <div class="logo-background"></div>
+        />
+    </div>
+</body>
+
+</html>
