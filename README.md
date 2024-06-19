@@ -1,5 +1,6 @@
+<img width="1722" alt="Screenshot 2024-06-19 alle 18 08 39" src="https://github.com/AntonioRu92/Log-in-Javascript/assets/126694776/57dc86ea-171a-4c8b-af3e-785395eaf6d1">
+
 # Log-in-Javascript
-![Uploading Screenshot 2024-06-19 alle 18.08.39.png…]()
 
 
 Caratteristiche Principali
