@@ -1,5 +1,6 @@
 # Log-in-Javascript
-All credit goes to The Odin Project for helping me on this journey.
+![Uploading Screenshot 2024-06-19 alle 18.08.39.png…]()
+
 
 Caratteristiche Principali
 
